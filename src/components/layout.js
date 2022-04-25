@@ -13,10 +13,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
+     <div className="global-wrapper">
       <GlobalStyle />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
       <main>{children}</main>
+      </div>
       <Footer />
     </>
   )
